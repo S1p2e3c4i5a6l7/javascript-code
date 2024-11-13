@@ -47,3 +47,74 @@ if(hasPaid && hasGoodHealth){
 }else{
     console.log("Go back home")
 }
+
+let age = 26;
+if (age > 25){
+    console.log("your age is above 25")
+}else if(age < 25){
+    console.log("your age is below 25")
+}else{
+    console.log("your age is 25")
+}
+
+let fruit ="apple";
+if(fruit === "bannana"){
+    console.log('we have bannana in the store')
+}else if(fruit === "orange"){
+    console.log("we have orange in our store")
+}else if(fruit === "coconut"){
+    console.log("coconut is in our store")
+}else if(fruit === "apple"){
+    console.log("we have apple in our store")
+}else{
+    console.log("we do not have apple in our store")
+}
+
+let fruit1 = "apple";
+
+switch (fruit1){
+    case "bannana":
+        console.log('it is bannana')
+        break;
+    case "apple":
+        console.log('it is apple');
+        break;
+    default:
+        console.log('we do  not have any fruit');
+}
+
+let age1 = 30;
+
+switch(age1){
+    case age1 > 25:
+        console.log("your age is above 25");
+        break;
+    case age1 < 25:
+        console.log("your age is below 25");
+        break;
+    default:
+        console.log("your age is equal to 25");
+}
+
+// Define an array of allowed actions
+const actions = ["start", "stop", "pause"];
+// Set the current user action
+let userAction = "start";
+// Set the login status
+let isLoggedIn = true;
+// Switch statement to evaluate conditions
+switch(true){
+    // Check if the user is valid and user is logged in
+    case actions.includes(userAction) && isLoggedIn:
+        // Log the message if the action is permitted
+        console.log("Action permitted:" + userAction);
+        break;
+        // Check if the valid but user is not logged in
+    case actions.includes(userAction) && !isLoggedIn:
+        // Log a message asking the user to log in
+        console.log("pleaselog in to perform this action");
+        break;
+    default:
+        // Log a message for no valid case found
+        console.log("No valid case found.");
+}
