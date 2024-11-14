@@ -95,25 +95,25 @@ switch(age1){
         console.log("your age is equal to 25");
 }
 
-// Define an array of allowed actions
-const actions = ["start", "stop", "pause"];
-// Set the current user action
-let userAction = "start";
-// Set the login status
-let isLoggedIn = true;
-// Switch statement to evaluate conditions
-switch(true){
-    // Check if the user is valid and user is logged in
-    case actions.includes(userAction) && isLoggedIn:
-        // Log the message if the action is permitted
-        console.log("Action permitted:" + userAction);
-        break;
-        // Check if the valid but user is not logged in
-    case actions.includes(userAction) && !isLoggedIn:
-        // Log a message asking the user to log in
-        console.log("pleaselog in to perform this action");
-        break;
-    default:
-        // Log a message for no valid case found
-        console.log("No valid case found.");
-}
+// Explain an array of allowed actions
+const actions = ["start","stop","pause"];
+// Set the current user action.
+let userAction ="start";
+// Set the login status.
+let isLoggedIn = true ;
+// Switch statement to evaluate conditions.
+switch(true) {
+    // Check if the user is valid and user is logged in.
+    case actions.includes(userAction) && isLoggedIn :
+        // Log the message if the action is permitted.
+        console.log("Action permitted:"+ userAction);
+        break ;
+        // Check if the valid but user is not logged in.
+    case actions.includes(userAction) && !isLoggedIn :
+        // Log a message asking the user to log in.
+        console.log("pleaselog in to perform this action") ;
+        break ;
+    default :
+        // Log a message for no valid case found.
+        console.log("No valid case found");
+ }
