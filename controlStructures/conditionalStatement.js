@@ -56,7 +56,6 @@ if (age > 25){
 }else{
     console.log("your age is 25")
 }
-
 let fruit ="apple";
 if(fruit === "bannana"){
     console.log('we have bannana in the store')
